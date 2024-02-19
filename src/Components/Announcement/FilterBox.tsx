@@ -85,9 +85,9 @@ const FilterBox = ({
       flex items-center justify-between w-full h-20 text-center px-36 `}
     >
       <ul className="grid grid-cols-3 font-medium">
-        <div className="relative font-medium">
+        <div className="relative font-medium mt-6">
           <section
-            className="flex items-center justify-center w-40 gap-1 text-gray-500 cursor-pointer"
+            className="flex items-center hover:opacity-80 justify-center w-40 gap-1 text-gray-500 cursor-pointer"
             onClick={() => setIsClicked(!isClicked)}
           >
             <p className="text-lg">

@@ -52,8 +52,10 @@ const FirstArea = () => {
           />
           <button
             className={`font-medium ${
-              enteredPhoneNum ? 'bg-primary01 text-white' : 'bg-[#E6E6E6]'
-            } rounded-lg px-5 py-3 w-32 transition-all`}
+              enteredPhoneNum
+                ? 'bg-primary01 text-white hover:opacity-80'
+                : 'bg-[#E6E6E6]'
+            } rounded-lg px-5 py-3 w-[142px] transition-all`}
             onClick={getAuthNumHandler}
           >
             인증번호 전송
@@ -78,8 +80,10 @@ const FirstArea = () => {
             />
             <button
               className={`font-medium ${
-                enteredAuthNum ? 'bg-primary01 text-white' : 'bg-[#E6E6E6]'
-              } rounded-lg px-5 py-3 w-32 transition-all`}
+                enteredAuthNum
+                  ? 'bg-primary01 text-white hover:opacity-80'
+                  : 'bg-[#E6E6E6]'
+              } rounded-lg px-5 py-3 w-[142px] transition-all`}
               onClick={authNumHandler}
             >
               확인
